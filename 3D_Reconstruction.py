@@ -12,10 +12,8 @@ import torch
 from transformers import AutoImageProcessor, AutoModelForDepthEstimation
 
 # load the image to convert
-img = cv2.imread('images/img0.jpg')
+img = cv2.imread('images/img_8.jpg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
-exporting = True
 
 # load the DepthAnything model for monocular depth estimation
 processor = AutoImageProcessor.from_pretrained("LiheYoung/depth-anything-large-hf")
@@ -91,3 +89,5 @@ point_cloud.orient_normals_to_align_with_direction()
 # create and draw a triangle mesh from the point cloud
 mesh, densities = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(point_cloud, depth=9)
 o3d.visualization.draw_geometries([mesh])
+
+o3d.io.write_triangle_mesh('./results/mesh_8.obj', mesh, write_triangle_uvs=True)
