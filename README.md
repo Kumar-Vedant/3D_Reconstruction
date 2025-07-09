@@ -12,18 +12,18 @@ A pipeline to convert single-view 2D images into full 3D model meshes using Mono
 ## Demo
 
 <p align="center">
-  <img src="images/img_0.jpg" width="500"/>
-  <img src="demo/cyberpunk.gif" width="500"/>
+  <img src="images/img_0.jpg" width="400"/>
+  <img src="demo/cyberpunk.gif" width="400"/>
 </p>
 
 <p align="center">
-  <img src="images/img_1.webp" width="500"/>
-  <img src="demo/car.gif" width="500"/>
+  <img src="images/img_1.webp" width="400"/>
+  <img src="demo/car.gif" width="400"/>
 </p>
 
 <p align="center">
-  <img src="images/img_2.jpg" width="500"/>
-  <img src="demo/citystreet.gif" width="500"/>
+  <img src="images/img_2.jpg" width="400"/>
+  <img src="demo/citystreet.gif" width="400"/>
 </p>
 
 ## Tech Stack
